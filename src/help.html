@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)">
+  <link rel="stylesheet" href="css/light.css" media="(prefers-color-scheme: light)">
+  <link rel="stylesheet" href="css/dark.css" media="(prefers-color-scheme: dark)">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Help page</title>
+</head>
+
+<body>
+  <header class="header-help">
+    <div class="container">
+      <div class="flex">
+        <a class="help-logo" href="index.html">
+          <img src="images/header/logo-dark.svg" alt="logo-dark">
+          <span>Help Center</span>
+        </a>
+        <!-- HELP-SEARCH--> 
+
+        <form class="help-search" action="#" role="search">
+          <input class="input-search" type="search" maxlength="20" required placeholder="Enter search...">
+          <label>Max 20 characters</label>
+          <button class="search-close-button">
+            <svg  viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-label="Очистить поиск" role="img" focusable="false"
+            style="display: block; fill: none; height: 12px; width: 12px;stroke: currentcolor; stroke-width: 5.33333; overflow:visible">
+            <path d="m6 6 20 20"></path><path d="m26 6-20 20"></path></svg>
+          </button>
+          <button class="btn-icon-search btn-airbnb">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+              style="display:block;fill:none;height:16px;width:16px;stroke:#fff;stroke-width:4;overflow:visible"
+              aria-hidden="true" role="presentation" focusable="false">
+              <g fill="none">
+                <path
+                  d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9">
+                </path>
+              </g>
+            </svg>
+          </button>       
+        </form>
+
+          <!-- POPUP-->
+          <ul id="search-dropdown" class="popup-help">
+            <h3>Popular Articles</h3>
+            <li>
+              <a href="#" target="_blank">
+                <span>
+                  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M25 3a2 2 0 0 1 1.995 1.85L27 5v2h2a2 2 0 0 1 1.995 1.85L31 9v17a3 3 0 0 1-3 3H4a3 3 0 0 1-2.995-2.824L1 26V5a2 2 0 0 1 1.85-1.995L3 3zm4 6h-2v17a1 1 0 0 0 1.993.117L29 26zm-4-4H3v21a1 1 0 0 0 .883.993L4 27h21zM13 21v2H7v-2zm8 0v2h-6v-2zm-8-4v2H7v-2zm8 0v2h-6v-2zm0-8v6H7V9zm-2 2H9v2h10z"></path>
+                  </svg>
+                </span>
+                <p>Cancel Reservation</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <span>
+                  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M25 3a2 2 0 0 1 1.995 1.85L27 5v2h2a2 2 0 0 1 1.995 1.85L31 9v17a3 3 0 0 1-3 3H4a3 3 0 0 1-2.995-2.824L1 26V5a2 2 0 0 1 1.85-1.995L3 3zm4 6h-2v17a1 1 0 0 0 1.993.117L29 26zm-4-4H3v21a1 1 0 0 0 .883.993L4 27h21zM13 21v2H7v-2zm8 0v2h-6v-2zm-8-4v2H7v-2zm8 0v2h-6v-2zm0-8v6H7V9zm-2 2H9v2h10z"></path></svg>
+                </span>
+                <p>How to change the date or time of a booked experience
+                </p>
+              </a>
+            </li>
+            <li class="popup-help-li_border">
+              <a href="#" target="_blank">
+                <span>
+                  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M25 3a2 2 0 0 1 1.995 1.85L27 5v2h2a2 2 0 0 1 1.995 1.85L31 9v17a3 3 0 0 1-3 3H4a3 3 0 0 1-2.995-2.824L1 26V5a2 2 0 0 1 1.85-1.995L3 3zm4 6h-2v17a1 1 0 0 0 1.993.117L29 26zm-4-4H3v21a1 1 0 0 0 .883.993L4 27h21zM13 21v2H7v-2zm8 0v2h-6v-2zm-8-4v2H7v-2zm8 0v2h-6v-2zm0-8v6H7V9zm-2 2H9v2h10z"></path>
+                  </svg>
+                </span>
+                <p>When the host cancels the booking</p>
+              </a>
+            </li>
+          </ul>
+          <!--END POPUP-->
+          
+        <div class="header-buttons flex">
+          <button class="language">
+            <svg width="16" height="16" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="9" cy="9" r="8" stroke="#222222" stroke-width="1.5" />
+              <ellipse cx="9" cy="9" rx="3" ry="8" stroke="#222222" stroke-width="1.5" />
+              <line x1="1" y1="9.25" x2="17" y2="9.25" stroke="#222222" stroke-width="1.5" />
+            </svg>
+          </button>
+
+          <button class="dropdown__button">
+            <svg class="icon" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="6.55671e-08" y1="1.25" x2="14" y2="1.25" stroke="#222222" stroke-width="1.5" />
+              <line x1="6.55671e-08" y1="5.25" x2="14" y2="5.25" stroke="#222222" stroke-width="1.5" />
+              <line x1="6.55671e-08" y1="9.25" x2="14" y2="9.25" stroke="#222222" stroke-width="1.5" />
+            </svg>
+            <div class="avatar">
+              <img src="images/1.webp" alt="asda">
+            </div>
+          </button>
+          <ul class="dropdown__menu">
+            <a id="log-in" href="#" class="dropdown__menu-item">
+              <li>Log in</li>
+            </a>
+            <a href="#" class="dropdown__menu-item">
+              <li>Sign up</li>
+            </a>
+            <div class="menu-item__line"></div>
+            <a href="#" class="dropdown__menu-item">
+              <li>Airbnb your home</li>
+            </a>
+            <a href="help.html" class="dropdown__menu-item">
+              <li>Help</li>
+            </a>
+            <a href="help-details.html" class="dropdown__menu-item">
+              <li>Help Details</li>
+            </a>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="help">
+      <div class="container-help">
+        <h1 class="help-title">Hi, how can we help?</h1>
+
+        <div class="tabs">
+          <nav class="tabs-list">
+            <button class="tabs-btn tabs_btn--active" data-tabs-path="guest">Guest</button>
+            <button class="tabs-btn" data-tabs-path="host">Host</button>
+            <button class="tabs-btn" data-tabs-path="experience">Experience Host</button>
+            <button class="tabs-btn" data-tabs-path="admin">Travel admin</button>
+            <div class="line line--active"></div>
+          </nav>
+
+          <div class="tabs__content tabs__content--active" data-tabs-target="guest">
+            <section class="content-guest">
+              <div class="registration">
+                <div class="registration-text">
+                  <h1>We will help you</h1>
+                  <p>Log in to get help with your reservations, account, and more.</p>
+                </div>
+                <div class="registration-button">
+                  <button class="btn-register btn-airbnb">
+                    Log in or sign up
+                  </button>
+                </div>
+              </div>
+              <div class="content-header">
+                <h3 class="tabs__content--header">Guides for getting started</h3>
+                <a href="#" target="_blank" class="content-header-link">All topics
+                  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                    style="
+                      display: block;
+                      fill: none;
+                      height: 16px;
+                      width: 16px;
+                      stroke: currentcolor;
+                      stroke-width: 4;
+                      overflow: visible;">
+                    <g fill="none">
+                      <path
+                        d="m12 4 11.2928932 11.2928932c.3905243.3905243.3905243 1.0236893 0 1.4142136l-11.2928932 11.2928932">
+                      </path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <!-- "Карточки-изображения"-->
+              <div class="card-guest">
+                <a href="#" target="_blank" class="card-guest-guides">
+                  <div class="skeleton">
+                    <img class="card-guest-images" src="images/help/help-images-5.jpg" alt="getting-airbnb" />
+                  </div>
+                  <h3 class="skeleton">Getting started with Airbnb</h3>
+                </a>
+
+                <a href="#" target="_blank" class="card-guest-guides">
+                  <div class="skeleton">
+                    <img class="card-guest-images" src="images/help/help-images-6.jpg" alt="account" />
+                  </div>
+                  <h3 class="skeleton">Accessing your account</h3>
+                </a>
+
+                <a href="#" target="_blank" class="card-guest-guides">
+                  <div class="skeleton">
+                    <img class="card-guest-images" src="images/help/help-images-7.jpg" alt="help" />
+                  </div>
+                  <h3 class="skeleton">Help with a reservation</h3>
+                </a>
+
+                <a href="#" target="_blank" class="card-guest-guides">
+                  <div class="skeleton">
+                    <img class="card-guest-images" src="images/help/help-image-4.png" alt="airCover" />
+                  </div>
+                  <h3 class="skeleton">Getting protected through AirCover</h3>
+                </a>
+              </div>
+
+              <!--"Popular Articles" -->
+              <h3 class="content-header-title">Popular Articles</h3>
+              <div class="popular-article">
+                <a href="#" target="_blank" class="popular-article-card">
+                  <h2>Cancel Reservation</h2>
+                  <p>
+                    You have new plans and now you need to cancel your booking.
+                    No problem. Reservation...
+                  </p>
+                </a>
+                <a href="#" target="_blank" class="popular-article-card">
+                  <h2>How to change the date or time of a booked experience</h2>
+                  <p>
+                    Booked an experience but can't participate at the selected
+                    time? Don't worry, we'll fix it...
+                  </p>
+                </a>
+                <a href="#" target="_blank" class="popular-article-card">
+                  <h2>When the host cancels the booking</h2>
+                  <p>
+                    Hosts rarely cancel bookings, but sometimes they do. We
+                    understand that this can greatly...
+                  </p>
+                </a>
+                <a href="#" target="_blank" class="popular-article-card">
+                  <h2>What payment methods does Airbnb accept?</h2>
+                  <p>
+                    The availability of payment methods on Airbnb depends on the
+                    country in which you have a...
+                  </p>
+                </a>
+                <a href="#" target="_blank" class="popular-article-card">
+                  <h2>How to change, remove or add a payment method</h2>
+                  <p>
+                    If one of the payment methods is invalid (for example, your
+                    bank card has expired), change...
+                  </p>
+                </a>
+                <a href="#" target="_blank" class="popular-article-card">
+                  <h2>When you pay for the booking</h2>
+                  <p>
+                    Congratulations, you have made a booking! What's next? Once
+                    the booking is...
+                  </p>
+                </a>
+              </div>
+          </div>
+
+          <div class="tabs__content" data-tabs-target="host">
+            <section class="content-guest">
+              <div class="registration">
+                <div class="registration-text">
+                  <h1>We will help you 2</h1>
+                  <p>Log in to get help with your reservations, account, and more.</p>
+                </div>
+                <div class="registration-button">
+                  <button class="btn-register btn-airbnb">
+                    Log in or sign up
+                  </button>
+                </div>
+              </div>
+              <div class="content-header">
+                <h3 class="tabs__content--header">Guides for getting started</h3>
+                <a href="#" target="_blank" class="content-header-link">All topics
+                  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                    style="
+                            display: block;
+                            fill: none;
+                            height: 16px;
+                            width: 16px;
+                            stroke: currentcolor;
+                            stroke-width: 4;
+                            overflow: visible;">
+                    <g fill="none">
+                      <path
+                        d="m12 4 11.2928932 11.2928932c.3905243.3905243.3905243 1.0236893 0 1.4142136l-11.2928932 11.2928932">
+                      </path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <!-- "Карточки-изображения"-->
+              <div class="card-guest">
+                <a href="#" target="_blank" class="card-guest-guides">
+                  <div class="skeleton">
+                    <img class="card-guest-images" src="images/help/help-images-5.jpg" alt="getting-airbnb" />
+                  </div>
+                  <h3 class="skeleton">Getting started with Airbnb</h3>
+                </a>
+
+                <a href="#" target="_blank" class="card-guest-guides">
+                  <div class="skeleton">
+                    <img class="card-guest-images" src="images/help/help-images-6.jpg" alt="account" />
+                  </div>
+                  <h3 class="skeleton">Accessing your account</h3>
+                </a>
+
+                <a href="#" target="_blank" class="card-guest-guides">
+                  <div class="skeleton">
+                    <img class="card-guest-images" src="images/help/help-images-7.jpg" alt="help" />
+                  </div>
+                  <h3 class="skeleton">Help with a reservation</h3>
+                </a>
+
+                <a href="#" target="_blank" class="card-guest-guides">
+                  <div class="skeleton">
+                    <img class="card-guest-images" src="images/help/help-image-4.png" alt="airCover" />
+                  </div>
+                  <h3 class="skeleton">Getting protected through AirCover</h3>
+                </a>
+              </div>
+
+              <!--"Popular Articles" -->
+              <h3 class="content-header-title">Popular Articles</h3>
+              <div class="popular-article">
+                <a href="#" target="_blank" class="popular-article-card">
+                  <h2>Cancel Reservation</h2>
+                  <p>
+                    You have new plans and now you need to cancel your booking.
+                    No problem. Reservation...
+                  </p>
+                </a>
+                <a href="#" target="_blank" class="popular-article-card">
+                  <h2>How to change the date or time of a booked experience</h2>
+                  <p>
+                    Booked an experience but can't participate at the selected
+                    time? Don't worry, we'll fix it...
+                  </p>
+                </a>
+                <a href="#" target="_blank" class="popular-article-card">
+                  <h2>When the host cancels the booking</h2>
+                  <p>
+                    Hosts rarely cancel bookings, but sometimes they do. We
+                    understand that this can greatly...
+                  </p>
+                </a>
+                <a href="#" target="_blank" class="popular-article-card">
+                  <h2>What payment methods does Airbnb accept?</h2>
+                  <p>
+                    The availability of payment methods on Airbnb depends on the
+                    country in which you have a...
+                  </p>
+                </a>
+                <a href="#" target="_blank" class="popular-article-card">
+                  <h2>How to change, remove or add a payment method</h2>
+                  <p>
+                    If one of the payment methods is invalid (for example, your
+                    bank card has expired), change...
+                  </p>
+                </a>
+                <a href="#" target="_blank" class="popular-article-card">
+                  <h2>When you pay for the booking</h2>
+                  <p>
+                    Congratulations, you have made a booking! What's next? Once
+                    the booking is...
+                  </p>
+                </a>
+              </div>
+            </section>
+          </div>
+
+          <div class="tabs__content" data-tabs-target="experience">
+            <section class="content-guest">
+              <div class="registration">
+                <div class="registration-text">
+                  <h1>We will help you 3</h1>
+                  <p>Log in to get help with your reservations, account, and more.</p>
+                </div>
+                <div class="registration-button">
+                  <button class="btn-register btn-airbnb">
+                    Log in or sign up
+                  </button>
+                </div>
+              </div>
+              <div class="content-header">
+                <h3 class="tabs__content--header">Guides for getting started</h3>
+                <a href="#" target="_blank" class="content-header-link">All topics
+                  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                    style="
+                            display: block;
+                            fill: none;
+                            height: 16px;
+                            width: 16px;
+                            stroke: currentcolor;
+                            stroke-width: 4;
+                            overflow: visible;">
+                    <g fill="none">
+                      <path
+                        d="m12 4 11.2928932 11.2928932c.3905243.3905243.3905243 1.0236893 0 1.4142136l-11.2928932 11.2928932">
+                      </path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <!-- "Карточки-изображения"-->
+              <div class="card-guest">
+                <div class="card-guest-guides">
+                  <a href="#" target="_blank">
+                    <img class="card-guest-images" src="images/help/help-images-5.jpg" alt="getting-airbnb" />
+                    <h3>Getting started with Airbnb</h3>
+                  </a>
+                </div>
+                <div class="card-guest-guides">
+                  <a href="#" target="_blank">
+                    <img class="card-guest-images" src="images/help/help-images-6.jpg" alt="account" />
+                    <h3>Accessing your account</h3>
+                  </a>
+                </div>
+                <div class="card-guest-guides">
+                  <a href="#" target="_blank">
+                    <img class="card-guest-images" src="images/help/help-images-7.jpg" alt="help" />
+                    <h3>Help with a reservation</h3>
+                  </a>
+                </div>
+                <div class="card-guest-guides">
+                  <a href="#" target="_blank">
+                    <img class="card-guest-images" src="images/help/help-image-4.png" alt="airCover" />
+                    <h3>Getting protected through AirCover</h3>
+                  </a>
+                </div>
+              </div>
+
+              <!--"Popular Articles" -->
+              <h3 class="content-header-title">Popular Articles</h3>
+              <div class="popular-article">
+                <a href="#" target="_blank" class="popular-article-card">
+                  <h2>Cancel Reservation</h2>
+                  <p>
+                    You have new plans and now you need to cancel your booking.
+                    No problem. Reservation...
+                  </p>
+                </a>
+                <a href="#" target="_blank" class="popular-article-card">
+                  <h2>How to change the date or time of a booked experience</h2>
+                  <p>
+                    Booked an experience but can't participate at the selected
+                    time? Don't worry, we'll fix it...
+                  </p>
+                </a>
+                <a href="#" target="_blank" class="popular-article-card">
+                  <h2>When the host cancels the booking</h2>
+                  <p>
+                    Hosts rarely cancel bookings, but sometimes they do. We
+                    understand that this can greatly...
+                  </p>
+                </a>
+                <a href="#" target="_blank" class="popular-article-card">
+                  <h2>What payment methods does Airbnb accept?</h2>
+                  <p>
+                    The availability of payment methods on Airbnb depends on the
+                    country in which you have a...
+                  </p>
+                </a>
+                <a href="#" target="_blank" class="popular-article-card">
+                  <h2>How to change, remove or add a payment method</h2>
+                  <p>
+                    If one of the payment methods is invalid (for example, your
+                    bank card has expired), change...
+                  </p>
+                </a>
+                <a href="#" target="_blank" class="popular-article-card">
+                  <h2>When you pay for the booking</h2>
+                  <p>
+                    Congratulations, you have made a booking! What's next? Once
+                    the booking is...
+                  </p>
+                </a>
+              </div>
+            </section>
+          </div>
+
+          <div class="tabs__content" data-tabs-target="admin">
+            <section class="content-guest">
+              <div class="registration">
+                <div class="registration-text">
+                  <h1>We will help you</h1>
+                  <p>Log in to get help with your reservations, account, and more.</p>
+                </div>
+                <div class="registration-button">
+                  <button class="btn-register btn-airbnb">
+                    Log in or sign up
+                  </button>
+                </div>
+              </div>
+              <div class="content-header">
+                <h3 class="tabs__content--header">Guides for getting started</h3>
+                <a href="#" target="_blank" class="content-header-link">All topics
+                  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                    style="
+                            display: block;
+                            fill: none;
+                            height: 16px;
+                            width: 16px;
+                            stroke: currentcolor;
+                            stroke-width: 4;
+                            overflow: visible;">
+                    <g fill="none">
+                      <path
+                        d="m12 4 11.2928932 11.2928932c.3905243.3905243.3905243 1.0236893 0 1.4142136l-11.2928932 11.2928932">
+                      </path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <!-- "Карточки-изображения"-->
+              <div class="card-guest">
+                <div class="card-guest-guides">
+                  <a href="#" target="_blank">
+                    <img class="card-guest-images" src="images/help/help-images-5.jpg" alt="getting-airbnb" />
+                    <h3>Getting started with Airbnb</h3>
+                  </a>
+                </div>
+                <div class="card-guest-guides">
+                  <a href="#" target="_blank">
+                    <img class="card-guest-images" src="images/help/help-images-6.jpg" alt="account" />
+                    <h3>Accessing your account</h3>
+                  </a>
+                </div>
+                <div class="card-guest-guides">
+                  <a href="#" target="_blank">
+                    <img class="card-guest-images" src="images/help/help-images-7.jpg" alt="help" />
+                    <h3>Help with a reservation</h3>
+                  </a>
+                </div>
+                <div class="card-guest-guides">
+                  <a href="#" target="_blank">
+                    <img class="card-guest-images" src="images/help/help-image-4.png" alt="airCover" />
+                    <h3>Getting protected through AirCover</h3>
+                  </a>
+                </div>
+              </div>
+
+              <!--"Popular Articles" -->
+              <h3 class="content-header-title">Popular Articles</h3>
+              <div class="popular-article">
+                <a href="#" target="_blank" class="popular-article-card">
+                  <h2>Cancel Reservation</h2>
+                  <p>
+                    You have new plans and now you need to cancel your booking.
+                    No problem. Reservation...
+                  </p>
+                </a>
+                <a href="#" target="_blank" class="popular-article-card">
+                  <h2>How to change the date or time of a booked experience</h2>
+                  <p>
+                    Booked an experience but can't participate at the selected
+                    time? Don't worry, we'll fix it...
+                  </p>
+                </a>
+                <a href="#" target="_blank" class="popular-article-card">
+                  <h2>When the host cancels the booking</h2>
+                  <p>
+                    Hosts rarely cancel bookings, but sometimes they do. We
+                    understand that this can greatly...
+                  </p>
+                </a>
+                <a href="#" target="_blank" class="popular-article-card">
+                  <h2>What payment methods does Airbnb accept?</h2>
+                  <p>
+                    The availability of payment methods on Airbnb depends on the
+                    country in which you have a...
+                  </p>
+                </a>
+                <a href="#" target="_blank" class="popular-article-card">
+                  <h2>How to change, remove or add a payment method</h2>
+                  <p>
+                    If one of the payment methods is invalid (for example, your
+                    bank card has expired), change...
+                  </p>
+                </a>
+                <a href="#" target="_blank" class="popular-article-card">
+                  <h2>When you pay for the booking</h2>
+                  <p>
+                    Congratulations, you have made a booking! What's next? Once
+                    the booking is...
+                  </p>
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="flex">
+        <a class="footer-rights" href="#">Copyright © 2022 Corporate UI Design System by Creative Tim.</a>
+        <nav class="footer-nav">
+          <a class="nav-link" href="#">Creative Tim</a>
+          <a class="nav-link ml-36px" href="#">About Us</a>
+          <a class="nav-link ml-36px" href="#">Blog</a>
+          <a class="nav-link ml-36px" href="#">License</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/help.js"></script>
+</body>
+
+</html>
